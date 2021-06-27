@@ -18,7 +18,7 @@ My second project on COVID. Lorem ipsum dolor sit amet, consectetur adipiscing e
 [![View on Tableau](https://img.shields.io/badge/Tableau-View_on_Tableau-E97627?logo=Tableau)](https://public.tableau.com/app/profile/derek.bonilla/viz/COVIDDashboard_16248262299040/Dashboard1)
 
 [Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/COVID Dashboard thumbnail.png?raw=true"/>
 
 ---
 [Project 3 Title](http://example.com/)
