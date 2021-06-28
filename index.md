@@ -7,7 +7,7 @@ My first project on COVID. Lorem ipsum dolor sit amet, consectetur adipiscing el
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/derekbonilla/COVIDproject/blob/main/COVID%20Project.sql)
 
-[Project 1 Title](/sample_page)
+[Project 1 Title](/covid_19_data_exploration.md)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
