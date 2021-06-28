@@ -18,4 +18,6 @@ Using the some of the SQL queries in the previous [COVID-19 Data Exploration](/c
 
 [![View on Tableau](https://img.shields.io/badge/Tableau-View_on_Tableau-E97627?logo=Tableau)](https://public.tableau.com/app/profile/derek.bonilla/viz/COVIDDashboard_16248262299040/Dashboard1)
 
+<img src="images/COVID Dashboard thumbnail.png"/>
+
 ---
