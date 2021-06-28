@@ -8,7 +8,7 @@ This project deals with data obtained from Our World in Data. I use fundamental 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/derekbonilla/COVIDproject/blob/main/COVID%20Project.sql)
 
 
-<img src="images/covid data exploration thumbnail.png"/>
+[<img src="images/covid data exploration thumbnail.png"/>](/covid_19_data_exploration.md)
 
 ---
 ### COVID-19 Dashboard
