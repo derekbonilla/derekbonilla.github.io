@@ -67,7 +67,9 @@ ORDER BY 1,2
 
 With this SQL query I put up the Total Cases against the Total Deaths to find the Death Percentage (likelihood of dying if contracted COVID-19). In the United States, as of June 25, 2021, this percentage was 1.79% vs 5.16% at the same time in 2020.
 
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/deathpercentage June 25.png"/>
+
+
 
 ```javascript
 SELECT SUM(new_cases) AS total_cases, SUM(CAST(new_deaths AS int)) AS total_deaths, SUM(CAST(new_deaths AS int))/SUM(New_Cases)*100 AS DeathPercentage
@@ -77,7 +79,7 @@ WHERE continent IS NOT null
 --GROUP BY date
 ORDER BY 1,2
 ```
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/global dp.png"/>
 Data shows that globally the current Death Percentage as 2.17%
 
 ### Conclusion
