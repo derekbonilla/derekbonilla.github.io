@@ -3,7 +3,7 @@
 ---
 ### COVID-19 Data Exploration
 
-My first project on COVID. [Read more...](/covid_19_data_exploration.md)Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This project deals with data obtained from Our World in Data. I use fundamental SQL statements to examine the multitude of data about the coronavirus. [Read more...](/covid_19_data_exploration.md)
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/derekbonilla/COVIDproject/blob/main/COVID%20Project.sql)
 
