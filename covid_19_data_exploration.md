@@ -29,21 +29,30 @@ population numeric,
 total_cases numeric,
 new_cases numeric
 );
-
 ```
 
+### Time For Exploration
 
 ```javascript
-if (isAwesome){
-  return true
-}
+SELECT location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 AS DeathPercentage
+FROM public.coviddeaths
+WHERE location LIKE '%States%'
+AND continent IS NOT null
+ORDER BY 1,2
 ```
-### 3. Support the selection of appropriate statistical tools and techniques
+
+With this SQL query I put up the Total Cases against the Total Deaths to find the Death Percentage (likelihood of dying if contracted COVID-19). In the United States, as of June 25, 2021, this percentage was 1.79% vs 5.16% at the same time in 2020.
 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
-### 4. Provide a basis for further data collection through surveys or experiments
+```javascript
+SELECT SUM(new_cases) AS total_cases, SUM(CAST(new_deaths AS int)) AS total_deaths, SUM(CAST(new_deaths AS int))/SUM(New_Cases)*100 AS DeathPercentage
+FROM public.coviddeaths
+--WHERE location LIKE '%states%'
+WHERE continent IS NOT null
+--GROUP BY date
+ORDER BY 1,2
+```
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+Data shows that globally the current Death Percentage as 2.17%
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
