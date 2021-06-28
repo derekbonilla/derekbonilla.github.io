@@ -32,6 +32,8 @@ As a Mac user my platform of choice is pgAdmin and PostgreSQL. Finding how to im
  
 One of the biggest issues that I ran into was finding the data type of each column in the datasets. I decided on putting the `numeric` data type on most, `text` data type for columns like `continent` and `location`, and the `date` data type for the `date` column. I’ve seen tutorials on how to get the data type of columns using Python, but that is ahead of my skill level for now. In the future I will come back to this project to examine this issue again.  I’m open to any advice.
 
+#### 1. Create a Table in pgAdmin
+
 ```javascript
 CREATE TABLE coviddeaths
 (
@@ -44,6 +46,14 @@ total_cases numeric,
 new_cases numeric
 );
 ```
+#### 2. Import the CSV File
+
+I decided to skip the query writing and let pgAdmin import the file for me. To do this, simply right-click on the table in the tree on the left and select the *Import/Export...* menu item.
+
+<img src="images/dummy_thumbnail.jpg?raw=true"/>
+ 
+In the new window. I set the slider to *Import*.  Then selected the source file and set the format to *CSV*. Set the *Header* to *Yes* because this file has a header. Selected the *Delimiter* as a comma. The data was imported and my table was ready to be explored.
+
 
 ### Time For Exploration
 
@@ -70,3 +80,6 @@ ORDER BY 1,2
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 Data shows that globally the current Death Percentage as 2.17%
 
+### Conclusion
+
+There is so much data in the original data set. I would like to go back and focus on specific countries. Also,  Our World in Data has many other data sets that look at other topics. One that interests me are the policy responses to COVID-19. There is data on face coverings, school and workplace closures, stay-at-home restrictions, etc. In future projects I will dive into some of them.
