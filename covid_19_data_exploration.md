@@ -23,7 +23,7 @@ Our World in Data has made a [full codebook](https://github.com/owid/covid-19-da
 
 [Our World in Data](https://ourworldindata.org/coronavirus) has an abundance of data on COVID-19. From deaths, vaccinations, to policy responses and many more. I wanted to explore the data on confirmed COVID-19 deaths for all countries. 
 
-The original file that I downloaded from Our World in Data is [here](https://github.com/derekbonilla/COVID_19_Project/blob/main/owid-covid-data.csv). However, for training purposes, I formatted the downloaded dataset into two different CSV files **[coviddeaths.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv)** and **[covidvaccinations.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv)**. My intention was to perform fundamental SQL statements at the beginning and later progress into other techniques like JOINS.
+The original file that I downloaded from Our World in Data is [here](https://github.com/derekbonilla/COVID_19_Project/blob/main/owid-covid-data.csv). However, for training purposes, I formatted the downloaded dataset into two different CSV files **[coviddeaths.csv](https://github.com/derekbonilla/COVID_19_Project/blob/main/coviddeaths.csv)** and **[covidvaccinations.csv](https://github.com/derekbonilla/COVID_19_Project/blob/main/covidvaccinations.csv)**. My intention was to perform fundamental SQL statements at the beginning and later progress into other techniques like JOINS.
 
 ---
 ### Importing The Datasets Into PostgreSQL
