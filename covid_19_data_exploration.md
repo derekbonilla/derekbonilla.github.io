@@ -65,7 +65,7 @@ AND continent IS NOT null
 ORDER BY 1,2
 ```
 
-With this SQL query I put up the Total Cases against the Total Deaths to find the Death Percentage (likelihood of dying if contracted COVID-19). In the United States, as of June 25, 2021, this percentage was 1.79% vs 5.16% at the same time in 2020.
+With this SQL query I put up the `total_cases` against the `total_deaths` to find the `Death Percentage` (likelihood of dying if contracted COVID-19). In the United States, as of June 25, 2021, this percentage was 1.79% vs 5.16% at the same time in 2020.
 
 <img src="images/deathpercentage June 25.png"/>
 
@@ -95,7 +95,8 @@ WHERE dea.continent IS NOT null
 ORDER BY 2,3
 ```
 <img src="images/rolling people vac.png"/>
-Completed a JOIN to look at the totalpopulation vs vaccinations. RollingPeopleVaccinated is a rolling count of people in a country that has been vaccinated. 
+
+Completed a JOIN to look at the total population vs vaccinations.  Rolling People Vaccinated is a rolling count of people in a country that has been vaccinated. 
 
 
 ### Conclusion
