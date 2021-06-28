@@ -20,10 +20,17 @@ Our World in Data has made a [full codebook](https://github.com/owid/covid-19-da
 
 
 ### Getting The Data
-For training purposes, I formatted the downloaded dataset into two different CSV files, [coviddeaths.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv) and [covidvaccinations.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv). My intention was to perform fundamental SQL statements at the beginning and later progress into other techniques like JOINS.
+
+[Our World in Data](https://ourworldindata.org/coronavirus) has an abundance of data on COVID-19. From deaths, vaccinations, to policy responses and many more. I wanted to explore the data on confirmed COVID-19 deaths for all countries. 
+
+The original file that I downloaded from Our World in Data is [here](https://ourworldindata.org/coronavirus). However, for training purposes, I formatted the downloaded dataset into two different CSV files **[coviddeaths.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv)** and **[covidvaccinations.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv)**. My intention was to perform fundamental SQL statements at the beginning and later progress into other techniques like JOINS.
 
 
 ### Importing The Datasets Into PostgreSQL
+
+As a Mac user my platform of choice is pgAdmin and PostgreSQL. Finding how to import the datasets was another project unto itself.
+ 
+One of the biggest issues that I ran into was finding the data type of each column in the datasets. I decided on putting the `numeric` data type on most, `text` data type for columns like `continent` and `location`, and the `date` data type for the `date` column. I’ve seen tutorials on how to get the data type of columns using Python, but that is ahead of my skill level for now. In the future I will come back to this project to examine this issue again.  I’m open to any advice.
 
 ```javascript
 CREATE TABLE coviddeaths
