@@ -102,7 +102,7 @@ ORDER BY 2,3
 ```
 <img src="images/rolling people vac.png"/>
 
-Completed a JOIN to look at the total population vs vaccinations.  Rolling People Vaccinated is a rolling count of people in a country that has been vaccinated. 
+Completed a JOIN to look at the total population vs vaccinations.  `RollingPeopleVaccinated` is a rolling count of people in a country that has been vaccinated. 
 
 ---
 ### Conclusion
