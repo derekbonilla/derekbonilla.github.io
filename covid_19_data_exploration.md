@@ -82,6 +82,22 @@ ORDER BY 1,2
 <img src="images/global dp.png"/>
 Data shows that globally the current Death Percentage as 2.17%
 
+```javascript
+SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations, 
+SUM(CAST(vac.new_vaccinations AS int)) OVER (PARTITION BY dea.location ORDER BY dea.location, dea.date)
+AS RollingPeopleVaccinated
+--, (RollingPeopleVaccinated/population)*100
+FROM public.coviddeaths dea
+JOIN public.covidvaccinations vac
+ON dea.location = vac.location
+AND dea.date = vac.date
+WHERE dea.continent IS NOT null 
+ORDER BY 2,3
+```
+<img src="images/rolling people vac.png"/>
+Completed a JOIN to look at the totalpopulation vs vaccinations. RollingPeopleVaccinated is a rolling count of people in a country that has been vaccinated. 
+
+
 ### Conclusion
 
 There is so much data in the original data set. I would like to go back and focus on specific countries. Also,  Our World in Data has many other data sets that look at other topics. One that interests me are the policy responses to COVID-19. There is data on face coverings, school and workplace closures, stay-at-home restrictions, etc. In future projects I will dive into some of them.
