@@ -1,5 +1,7 @@
 ## COVID-19 Data Exploration Using SQL
 
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/derekbonilla/COVIDproject/blob/main/COVID%20Project.sql)
+
 ### About the ***Our World in Data COVID-19*** dataset
 The variables represent all of the main data related to confirmed cases, deaths, hospitalizations, and testing, as well as other variables of potential interest.
 
