@@ -13,7 +13,8 @@ This project deals with data obtained from Our World in Data. I use fundamental 
 ---
 ### COVID-19 Dashboard
 
-Using the some of the SQL queries in the previous COVID-19 Data Exploration project I created multiple visualizations and a Tableau dashboard.
+Using the some of the SQL queries in the previous [COVID-19 Data Exploration](/covid_19_data_exploration.md)
+ project I created multiple visualizations and a Tableau dashboard.
 
 [![View on Tableau](https://img.shields.io/badge/Tableau-View_on_Tableau-E97627?logo=Tableau)](https://public.tableau.com/app/profile/derek.bonilla/viz/COVIDDashboard_16248262299040/Dashboard1)
 
