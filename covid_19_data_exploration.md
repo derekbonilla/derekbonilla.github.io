@@ -104,6 +104,8 @@ ORDER BY 2,3
 
 Completed a JOIN to look at the total population vs vaccinations.  `RollingPeopleVaccinated` is a rolling count of people in a country that has been vaccinated. 
 
+###### To view the entire list of queries performed, click on the View on GitHub badge at the top of this page.
+
 ---
 ### Conclusion
 
