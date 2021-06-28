@@ -52,7 +52,7 @@ I decided to skip the query writing and let pgAdmin import the file for me. To d
 
 <img src="images/import csv file.png"/>
  
-In the new window. I set the slider to *Import*.  Then selected the source file and set the format to *CSV*. Set the *Header* to *Yes* because this file has a header. Selected the *Delimiter* as a comma. The data was imported and my table was ready to be explored.
+In the new window. I set the slider to *Import*.  Then selected the source file and set the format to *csv*. Set the *Header* to *Yes* because this file has a header. Selected the *Delimiter* as a comma. The data was imported and my table was ready to be explored.
 
 ---
 ### Time For Exploration
