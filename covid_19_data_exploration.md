@@ -18,14 +18,14 @@ The columns in this dataset are:
 
 Our World in Data has made a [full codebook](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv) available, with a description and source for each variable in the dataset.
 
-
+---
 ### Getting The Data
 
 [Our World in Data](https://ourworldindata.org/coronavirus) has an abundance of data on COVID-19. From deaths, vaccinations, to policy responses and many more. I wanted to explore the data on confirmed COVID-19 deaths for all countries. 
 
 The original file that I downloaded from Our World in Data is [here](https://ourworldindata.org/coronavirus). However, for training purposes, I formatted the downloaded dataset into two different CSV files **[coviddeaths.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv)** and **[covidvaccinations.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv)**. My intention was to perform fundamental SQL statements at the beginning and later progress into other techniques like JOINS.
 
-
+---
 ### Importing The Datasets Into PostgreSQL
 
 As a Mac user my platform of choice is pgAdmin and PostgreSQL. Finding how to import the datasets was another project unto itself.
@@ -54,9 +54,10 @@ I decided to skip the query writing and let pgAdmin import the file for me. To d
  
 In the new window. I set the slider to *Import*.  Then selected the source file and set the format to *CSV*. Set the *Header* to *Yes* because this file has a header. Selected the *Delimiter* as a comma. The data was imported and my table was ready to be explored.
 
-
+---
 ### Time For Exploration
 
+#### SQL Query Example 1
 ```javascript
 SELECT location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 AS DeathPercentage
 FROM public.coviddeaths
@@ -64,12 +65,13 @@ WHERE location LIKE '%States%'
 AND continent IS NOT null
 ORDER BY 1,2
 ```
+<img src="images/deathpercentage June 25.png"/>
 
 With this SQL query I put up the `total_cases` against the `total_deaths` to find the `Death Percentage` (likelihood of dying if contracted COVID-19). In the United States, as of June 25, 2021, this percentage was 1.79% vs 5.16% at the same time in 2020.
 
-<img src="images/deathpercentage June 25.png"/>
 
 
+#### SQL Query Example 2
 
 ```javascript
 SELECT SUM(new_cases) AS total_cases, SUM(CAST(new_deaths AS int)) AS total_deaths, SUM(CAST(new_deaths AS int))/SUM(New_Cases)*100 AS DeathPercentage
@@ -80,7 +82,11 @@ WHERE continent IS NOT null
 ORDER BY 1,2
 ```
 <img src="images/global dp.png"/>
+
 Data shows that globally the current Death Percentage as 2.17%
+
+
+#### SQL Query Example 3
 
 ```javascript
 SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations, 
@@ -98,7 +104,7 @@ ORDER BY 2,3
 
 Completed a JOIN to look at the total population vs vaccinations.  Rolling People Vaccinated is a rolling count of people in a country that has been vaccinated. 
 
-
+---
 ### Conclusion
 
 There is so much data in the original data set. I would like to go back and focus on specific countries. Also,  Our World in Data has many other data sets that look at other topics. One that interests me are the policy responses to COVID-19. There is data on face coverings, school and workplace closures, stay-at-home restrictions, etc. In future projects I will dive into some of them.
