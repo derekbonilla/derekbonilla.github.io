@@ -1,25 +1,39 @@
-## This can be your internal website page / project page
+## COVID-19 Data Exploration Using SQL
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### About the ***Our World in Data COVID-19*** dataset
+The variables represent all of the main data related to confirmed cases, deaths, hospitalizations, and testing, as well as other variables of potential interest.
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+The columns in this dataset are:
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Our World in Data has made a [full codebook](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv) available, with a description and source for each variable in the dataset.
+
+
+### Getting The Data
+For training purposes, I formatted the downloaded dataset into two different CSV files, [coviddeaths.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv) and [covidvaccinations.csv](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-codebook.csv). My intention was to perform fundamental SQL statements at the beginning and later progress into other techniques like JOINS.
+
+
+### Importing The Datasets Into PostgreSQL
+
+```javascript
+CREATE TABLE coviddeaths
+(
+iso_code text,
+continent text,
+location text,
+date date,
+population numeric,
+total_cases numeric,
+new_cases numeric
+);
+
+```
+
 
 ```javascript
 if (isAwesome){
   return true
 }
 ```
-
-### 2. Assess assumptions on which statistical inference will be based
-
-```javascript
-if (isAwesome){
-  return true
-}
-```
-
 ### 3. Support the selection of appropriate statistical tools and techniques
 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
