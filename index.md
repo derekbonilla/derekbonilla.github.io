@@ -21,3 +21,12 @@ Using the some of the SQL queries in the previous [COVID-19 Data Exploration](/c
 <img src="images/COVID Dashboard thumbnail.png"/>
 
 ---
+
+### Car Data Cleaning Project
+
+Back to SQL fundamentals with this project. Using automobile data, I tackle a data analyst work situation. For this project I specifically focus on the cleaning aspect with fundamental SQL queries. [Read more...](https://github.com/derekbonilla/car_data_cleaning)
+
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/derekbonilla/car_data_cleaning/blob/main/car_data.sql)
+
+
+[<img src="images/car data cleaning project thumbnail.jpg"/>](https://github.com/derekbonilla/car_data_cleaning)
