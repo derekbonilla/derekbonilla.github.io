@@ -3,9 +3,9 @@
 ---
 ### Google Data Analytics Capstone Project
 
-[Read more...](https://github.com/derekbonilla/Cyclistic_Bike_Share_With_R.md)
+[Read more...](https://github.com/derekbonilla/Cyclistic_Bike_Share_With_R)
 
-[<img src="images/DIVVY Bikes Thumbnail.jpeg"/>](https://github.com/derekbonilla/Cyclistic_Bike_Share_With_R.md)
+[<img src="images/DIVVY Bikes Thumbnail.jpeg"/>](https://github.com/derekbonilla/Cyclistic_Bike_Share_With_R)
 
 ---
 ### COVID-19 Data Exploration
