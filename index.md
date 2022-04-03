@@ -1,6 +1,13 @@
 ## Portfolio
 
 ---
+### Google Data Analytics Capstone Project
+
+[Read more...](/Cyclistic_Bike_Share_With_R.md)
+
+[<img src="images/DIVVY Bikes Thumbnail.jpeg"/>](/Cyclistic_Bike_Share_With_R.md)
+
+---
 ### COVID-19 Data Exploration
 
 This project deals with data obtained from Our World in Data. I use fundamental SQL statements to examine the multitude of data about the coronavirus. [Read more...](/covid_19_data_exploration.md)
