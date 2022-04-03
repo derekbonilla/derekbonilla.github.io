@@ -3,7 +3,7 @@
 ---
 ### Google Data Analytics Capstone Project
 
-[Read more...](https://github.com/derekbonilla/Cyclistic_Bike_Share_With_R)
+This case study is of a fictional bike sharing company called Cyclistic, and its goal is design marketing strategies aimed at converting casual riders into annual members. Using the R programming language I analyze bike data to help guide business decisions. [Read more...](https://github.com/derekbonilla/Cyclistic_Bike_Share_With_R)
 
 [<img src="images/DIVVY Bikes Thumbnail.jpeg"/>](https://github.com/derekbonilla/Cyclistic_Bike_Share_With_R)
 
